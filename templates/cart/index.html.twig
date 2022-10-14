@@ -31,7 +31,7 @@
      <td>{{item.produit.prix}}</td>
      <td>{{item.produit.couleur}}</td>
      <td>{{item.produit.taille}}</td>
-     <td> <img src="{{item.produit.photo}}"></td>
+     <td> <img src="{{item.produit.photo}} " width="100"></td>
      <td>{{item.quantite }}</td>
      <td>{{item.produit.prix * item.quantite}}€</td>
      <td> <a href="{{path('cart_remove',{id: item.produit.id})}}" class="btn-sm btn-danger">
