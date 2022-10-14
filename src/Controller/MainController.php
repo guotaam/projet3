@@ -62,10 +62,10 @@ class MainController extends AbstractController
 
     $commande->setIdProduit($item['produit']);
     $commande->setEtat('en cours de traitement');
-    $commande->setQuantite($item['quantite']);
-     $quantite=$item['quantite'];
-    $prixunitaire=$item['produit']->getPrix();
-     $montant=$quantite*$prixunitaire;
+    $commande->setquantite($item['quantite']);
+   $quantite=$item['quantite'];
+   $prixunitaire=$item['produit']->getPrix();
+   $montant=$quantite*$prixunitaire;
 
 
 
