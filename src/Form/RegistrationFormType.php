@@ -30,7 +30,7 @@ class RegistrationFormType extends AbstractType
                     'Mme' => 'Femme'
                 ]
             ])
-            ->add('statut')
+            //->add('statut')
             ->add('createdAt', DateTimeType::class, [
                 'widget' => 'single_text',
                 'attr' => [

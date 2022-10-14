@@ -38,7 +38,7 @@ class MembreCrudController extends AbstractCrudController
     {
         return [
            
-            IdField::new('id')->hideOnForm(),
+           // IdField::new('id')->hideOnForm(),
             TextField::new('pseudo'),
             
             TextField::new('password','Mot de passe')->setFormType(PasswordType::class)->onlyWhenCreating(),
@@ -47,7 +47,7 @@ class MembreCrudController extends AbstractCrudController
             TextField::new('Nom'),
             TextField::new('email'),
             TextField::new('civilite'),
-            TextField::new('statut'),
+           
             DateTimeField::new('createdAt')->setFormat("d/M/y à H:m:s"),
             CollectionField::new('roles')->setTemplatePath('admin/field/roles.html.twig'),
          
